@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your main stylesheet -->
+    <style>
+        /* Custom styles specific to this project page */
+        body {
+            color: #000; /* Set text color to black (#000) */
+        }
+
+        .project-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-page img {
+            max-width: 40%; /* Adjust the image width as needed */
+            height: auto;
+            float: left; /* Float the image to the left */
+            margin-right: 20px; /* Add margin to create spacing */
+        }
+
+        .project-page h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .project-page p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-page">
+        <img src="gait_phase1.png" alt="Project 1">
+        <h1>Gait Phase Estimation using Deep Neural Networks</h1>
+        <p>In the realm of biomechanics research, understanding gait phases is crucial for diagnosing and addressing gait disorders. Our project is centered on the fascinating field of gait phase estimation, where we leverage the capabilities of neural network models to contribute to this vital area of study.
+            Neural networks have demonstrated their effectiveness in recognizing complex patterns within the gait cycle and accurately categorizing its various phases. Our project focuses on the application of neural network models to tackle this challenging task.
+            I began with the collection of lower limb kinematic data from human subjects, utilizing state-of-the-art Vicon motion capture systems and Bertec Treadmill forceplates. We explored different combinations of kinematic data as inputs for our neural network models, carefully evaluating their performance. The images here demonstrate how the skeleton models are obstained from vicon motion capture systems.
+            </p>
+        <!-- You can add more images and text here to provide additional project details -->
+        <img src="gait_phase2.png" alt="Project 1 Image 2">
+        <p> We also sought to understand the strengths and limitations of various neural network architectures in gait phase estimation, including feed-forward neural networks, LSTMs, CNN-LSTMs, and variational autoencoders (VAEs).
+            A notable achievement was the development of a Hybrid-VAE model, which we trained on data from 10 subjects walking on both level and inclined surfaces at varying speeds. Our model exhibited strong performance, achieving a remarkable gait phase estimation accuracy of 99.7% for the same subject, maintaining a 5% error tolerance during level walking trials. It also performed well on inclined surfaces, with an accuracy rate of 99.6%.
+            Expanding our scope, we tested our model on a broader group of 11 healthy subjects navigating mixed-level and inclined surfaces. The results remained promising, with our model achieving an accuracy of 98.2% with a 5% gait phase percentage error tolerance and 90.1% with a 3% gait phase percentage error tolerance.
+            Our project underscores the potential of neural networks to enhance gait phase estimation in a meaningful way. It represents a valuable contribution to the field, with the aim of improving the diagnosis and management of gait-related conditions.
+        </p> 
+        <a href="https://github.com/vishnu-096/Gait_Phase_Prediction" target="_blank" class="github-link">
+            <i class="fab fa-github"></i> View on GitHub
+            </a>
+       </div>
+
+
+</body>
+</html>
