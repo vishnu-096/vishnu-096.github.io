@@ -55,23 +55,29 @@ body {
     font-size: 28px; /* Increase the font size */
     max-width: 200px;
     margin: 0 auto;
+    margin-bottom: 40px; /* Adjust the margin as needed */
+
 }
+
+/* Modify the width and add spacing to the About Me section */
 .about-description {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 20px 20px 20px 20px;
+    padding: 20px; /* Add padding to create space from all sides */
+    border-radius: 20px;
     color: #333;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     position: relative;
-    margin-top: 20px;
-    max-width: 500px; /* Set the maximum width as needed */
-    width: 100%; /* Make it take the full width of its container */
-    margin-left: 20px; /* Add margin to separate it from the image */
+    margin-top: 100px;
+    max-width: 1500px; /* Increase the maximum width as needed */
+    width: 80%; /* Set the width as a percentage of the container */
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+    transform: translateX(20%);
 }
-
 .about-description p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
+    margin-bottom: 20px;
     text-align: left; /* Align the description text to the left */
 }
 
@@ -114,7 +120,9 @@ h2 {
     padding: 20px;
     border-radius: 20px;
     color: #333;
-    transform: translateX(200%);
+    transform: translateX(300%);
+    transform: translateZ(-250%);
+    margin-top: 20px; /* Add margin to move it below the cover pic */
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
