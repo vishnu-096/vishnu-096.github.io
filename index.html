@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add these links to your HTML file -->
+
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/typewriter.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Web Developer & Designer</p>
+    <header style="background-image: url('images/header.jpg');">
+        <h1>Vishnu T. P.</h1>
+        <p>Roboticist | Researcher | Tech Evangelist</p>
     </header>
 
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="#">Your Name</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <div class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </div>     -->
     <section id="about" class="initial-0">
-        <h2>About Me</h2>
         <div class="about-content">
-            <div class="about-image">
-                <img src="images/prof_pic2.jpg" alt="Your Photo">
-            </div>
+
             <div class="about-description">
+                <div class="about-header">
+                    <div class="header">About Me</div>
+                </div>
                 <p>Vishnu is an International Graduate student at ASU majoring in Robotics And Autonomous Systems. He has a strong background in robotics and embedded systems.
                     Vishnu has an experience of over two years at Marvell Technology where he worked on designing and developing data plane modules for switches and routers. His strong drive and interest in the field of robotics motivated him to switch from the computer networks/embedded domain to robotics.
                     After which, he has worked on multiple research projects mainly in the field of autonomous mobile robot.</p>
@@ -27,9 +58,17 @@
                     Being an avid soccer fan, he spends his spare time playing/watching soccer. He also enjoys hiking and traveling.
                     </p>
             </div>
+            <div class="about-image">
+                <img src="images/prof_pic2.jpg" alt="Your Photo" class="circular-image">
+            </div>
         </div>
     </section>
-
+    <section id="skills">
+        <h2>Expertise</h2>
+        <p id="skillsText"></p>
+    </section>
+    
+    
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-container">
@@ -49,6 +88,23 @@
                     <a href="project2.html">View Details</a>
                 </div>
             </div>
+            <div class="project">
+                <img src="images/sgan_pic2.png" alt="Project 3">
+                <div class="project-details">
+                    <h3>Preemptive planning and Dynamic obstacle avoidance with SGANs and MPC</h3>
+                    <p>Description of Project 2</p>
+                    <a href="project3.html">View Details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/icra_1.png" alt="Project 3">
+                <div class="project-details">
+                    <h3>Robot Guide: Social Robot based Intelligent Navigation of Visually Impaired Person in Human Aware Indoor Environment</h3>
+                    <p>Description of Project 2</p>
+                    <a href="project4.html">View Details</a>
+                </div>
+            </div>
+
             <!-- Add more project entries here -->
         </div>    
     </section>
@@ -56,5 +112,6 @@
     <footer>
         <p>Contact: your@email.com</p>
     </footer>
+
 </body>
 </html>

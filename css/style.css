@@ -31,7 +31,7 @@ body {
 
 .initial-0 h1,
 .initial-0 h3,
-.initial-0 h2{
+.initial-0 h2 {
     margin-left: 450px;
     font-size: 48px;
 }
@@ -39,25 +39,53 @@ body {
     color: #000;
 }
 
-.about-content .about-image {
-    flex: 0.7;
-    margin-right: 1rem; /* Adjust margin for better spacing */
-    max-width: 100%;
-    height: auto;
+.about-content {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
 }
-
-.about-image img {
-    max-width: 100%; /* Adjust image width for responsiveness */
-    height: auto;
+/* Add this CSS for the grey "About Me" box */
+.about-header {
+    background-color: #2997ea;
+    padding: 10px 10px; /* Increase padding to control the box length */
+    border-radius: 20px 20px 20px 20px; /* Make it rounded on top */
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px; /* Increase the font size */
+    max-width: 200px;
+    margin: 0 auto;
 }
-
-.about-content .about-description {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly increased opacity for better readability */
+.about-description {
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    border-radius: 8px;
-    color: #333; /* Change text color to a darker shade for better readability */
+    border-radius: 20px 20px 20px 20px;
+    color: #333;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 20px;
+    max-width: 500px; /* Set the maximum width as needed */
+    width: 100%; /* Make it take the full width of its container */
+    margin-left: 20px; /* Add margin to separate it from the image */
 }
+
+.about-description p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; /* Align the description text to the left */
+}
+
+
+
+.circular-image {
+    border-radius: 50%;
+    width: 550px; /* Adjust the width and height as needed */
+    height: 550px;
+    object-fit: cover; /* Maintain image aspect ratio and cover the circular container */
+    margin-left: 500px; /* Adjust the margin as needed */
+    float: right; /* Float the image to the left to keep the text next to it */
+}
+
 
 .container {
     max-width: 1200px;
@@ -78,7 +106,48 @@ h2 {
     margin-bottom: 20px;
 }
 
-header {
+
+/* Add this to your existing CSS file or in a <style> tag within your HTML */
+
+#skills {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    color: #333;
+    transform: translateX(200%);
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    max-width: 400px; /* Set the maximum width as needed */
+    width: 100%; /* Make it take the full width of its container */
+    margin-left: 20px; /* Add margin to separate it from the description */
+}
+
+#skills h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    color: #fff;
+    text-align: center;
+    top: -15px;
+    /* right: 80%; */
+    /* transform: translateX(-50%); */
+    background-color: #28696a;
+
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#skillsText {
+    font-size: 18px; /* Adjust the font size as needed */
+    padding: 10px;
+    color: #333;
+
+}
+
+/* header {
     background-color: #333;
     color: white;
     text-align: center;
@@ -92,7 +161,28 @@ header h1 {
 
 header p {
     font-size: 18px;
+} */
+header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 100px 0; /* Adjust the padding for spacing */
 }
+
+header h1 {
+    font-size: 48px; /* Increase the font size */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    font-family: 'Your Preferred Font', sans-serif; /* Specify a preferred font */
+}
+
+header p {
+    font-size: 24px; /* Increase the font size */
+    font-family: 'Your Preferred Font', sans-serif; /* Specify a preferred font */
+}
+
 
 .container {
     max-width: 1200px;
@@ -132,8 +222,8 @@ h2 {
 }
 
 .project img {
-    width: 200px; /* Set a fixed width for the project images */
-    height: 150px; /* Set a fixed height for the project images */
+    width: 300px; /* Adjust the width for larger project images */
+    height: 200px; /* Adjust the height for larger project images */
     object-fit: cover;
     margin-bottom: 10px; /* Add margin to separate image and text */
 }
@@ -154,16 +244,7 @@ h2 {
     font-size: 16px;
     /* margin-top: 10px; */
 }
-a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s ease-in-out;
-}
 
-a:hover {
-    color: #0056b3;
-}
 
 footer {
     background-color: #333;
@@ -185,4 +266,14 @@ footer {
         max-width: 50%;
         height: 50%;
     }
+}
+/* Bootstrap Overrides */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important; /* Change link text color to white */
+    font-weight: bold; /* Make link text bold */
+    font-size: 22px
+}
+
+.navbar-dark .navbar-toggler-icon {
+    color: #fff; /* Change the color of the navbar toggler icon (hamburger menu) */
 }

@@ -41,15 +41,33 @@
 </head>
 <body>
     <div class="project-page">
-        <img src="images/charlotte_1.png" alt="Project 3">
-        <h1>Charlotte: Six-Leggeed Robot for Lunar Crator Exploration</h1>
-        <p>Based on the NASA Big Idea Challenge problem statement, Charlotte robot’s primary exploratory operation is to search for water –ice and other volatiles within Shackleton crator on Lunar South Pole. The journey of starting from whiteboard and going all the way to Demo down a hill at JPL was exciting and educational.
-        </p>
+        <img src="images/fig10.PNG" alt="Project 3 Image 1">
+        <h1>Preemptive planning and Dynamic obstacle avoidance with SGANs and MPC</h1>
+        <p>Robot motion planning in dynamic environments is a very challenging problem that requires the​
+            robot to generate safe and efficient paths to follow. Where the safety of pedestrians or humans is​
+            associated with robot collisions, the factor of the robot’s efficiency plays a pivotal role in minimizing​
+            pause time, path navigation, and utilization of resources such as batteries.​
+            Keeping these parameters into consideration, and the example of the Starship food delivery robots,​
+            which tends to halt if people come in front of it, we have solved this problem by integrating SGANs​
+            (Social Generative Adversarial Networks) for human movement predictions and obstacle modeling,​
+            traditional motion planning algorithms and approaches such as RRT*/modified RRT* paired with​
+            spline interpolation, and motion control using Non-Linear Model Predictive Controller (NMPC) to​
+            dynamically avoid obstacles and reach the target location.​
+            Our approach and experimental results indicate that the chance of collision drastically drops to​
+            approximately 70% in an environment with up to 6 people.​
+            </p>
         <!-- You can add more images and text here to provide additional project details -->
-        <!-- <img src="gait_phase2.png" alt="Project 1 Image 2"> -->
-        <p> The Omnidirectional Rover is able to autonomously navigate inclinations up to 40 degrees. It was tested on the rugged hilly terrains of A mountain and the colton crator (volcanic crator in flagstaff). The rover can be controlled using a mission control robust gui. It has all the safety thresholds and switches. 
-            There are 3 1DOF and 3 3DOF legs. The 1-DOF legs allows the robot to stabilize itself during locomotion while 3-DOF legs are moving into next position. The hip, knee and ankle motors allows rover to move in any direction and to dynamically adjust each leg for varied terrain based on torque feedback. 
-                    </p> 
+        <img src="images/fig11.png" alt="Project 3 Image 2">
+        <p> For the baseline, we utilized Social GAN: Socially Acceptable Trajectories with Generative Adversar-​
+            ial Networks by Agrim Gupta et al. [1], which assists to predict the motion behavior of pedestrians.​
+            The paper uses GANs to overcome the difficulties in approximating intractable probabilistic compu-​
+            tation and behavioral inference. The proposed GAN in the SGAN paper is an RNN Encoder-Decoder​
+            generator and an RNN-based encoder discriminator with a variety loss to encourage the GAN’s​
+            generative network to spread its distribution and cover the space of possible paths while remaining​
+            consistent with the observed inputs and a new pooling mechanism which learns a "global" pooling​
+            vector that encodes subtle cues for all participants in a scene. This model uses accuracy, speed, and​
+            the ability of the model as metrics to generate a variety of socially acceptable trajectories based on​
+            experiments on several publicly available real-world crowd datasets​                    </p> 
         <a href="https://github.com/vishnu-096/Gait_Phase_Prediction" target="_blank" class="github-link">
             <i class="fab fa-github"></i> View on GitHub
             </a>
