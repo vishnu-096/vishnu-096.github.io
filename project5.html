@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Project 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Custom styles specific to this project page */
+        body {
+            color: #000; /* Set text color to black (#000) */
+        }
+
+        .project-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-page img {
+            max-width: 40%; /* Adjust the image width as needed */
+            height: auto;
+            float: left; /* Float the image to the left */
+            margin-right: 20px; /* Add margin to create spacing */
+        }
+
+        .project-page h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .project-page p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript to load the common header -->
+    <script>
+        $(function () {
+            // Load the common header into the specified container
+            $('#common-header-container').load('common_header.html');
+        });
+    </script>
+
+    <!-- Your page content goes here -->
+    <div id="common-header-container"></div>
+    <div class="project-page">
+        <img src="images/MRS4.png" alt="Project 4 Image 1">
+        <h1>Exploration and Mapping using a Decentralized Multi-Robot System for Search and Rescue Operations​</h1>
+        <p>A decentralized approach removes the dependency on any one of the systems in comparison to a centralized approach. The major behaviors investigated in the project include but are not limited to collective perception and localization, exploration, mapping, and object detection or foraging. These behaviors have been implemented using frontier detection, path planning, trajectory tracking, obstacle avoidance, and communication. We also built our custom simulator from the ground up using Python, to accurately visualize, understand, and verify the behaviors as intended.  
+        </p><p>
+            Like most search and rescue operations, the bounded environment is unknown with static obstacles and a single target object. The information available to the robots include sensing area (circle with a radius of 10m) and estimations of the area covered by other robots. Each robot has a local map that gets updated with objects and areas it has covered. These local maps are estimated using ellipses and communicated to other robots in a reduced data format using a transformation matrix. Enabling faster communication and maximum exploration. 
+            
+            The exploration technique exhibits a behavior similar to a combination of levy walk and Brownian motion. It moves to the sampled point (goal position) if it meets certain conditions. The exploration carries on till the target object is found.  
+        </p><p>
+            Two separate approaches have been developed for motion planning. The first approach utilizes RRT* to choose the best trajectory to the goal position and a PID controller to track the trajectory. Paired along with a potential gradient-based obstacle avoidance algorithm. The second approach uses a non-linear Model Predictive Controller (MPC) for obstacle avoidance and preventing collisions between robots.  
+            
+            With the above-mentioned algorithms and control strategies we were able to find the target object and simulate the results for verification.         
+        </p>
+            <img src="images/MRS1.png" alt="Project 4 Image 1">
+            <p>Initial and final state of map after exploration by 3 robots.</p>
+            <img src="images/MRS1.png" alt="Project 4 Image 1">
+            <a href="https://github.com/vishnu-096/Gait_Phase_Prediction" target="_blank" class="github-link"> -->
+            <i class="fab fa-github"></i> View on GitHub
+            </a>
+        <a href="images/ICRA_2022_FInal_paper.pdf" target="_blank" class="Paper pdf">
+                <i class="far fa-file-pdf"></i> View PDF
+            </a>
+        </div>
+
+
+</body>
+</html>

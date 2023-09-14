@@ -40,6 +40,19 @@
     </style>
 </head>
 <body>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript to load the common header -->
+    <script>
+        $(function () {
+            // Load the common header into the specified container
+            $('#common-header-container').load('common_header.html');
+        });
+    </script>
+
+    <!-- Your page content goes here -->
+    <div id="common-header-container"></div>
     <div class="project-page">
         <img src="images/charlotte_1.png" alt="Project 1">
         <h1>Charlotte: Six-Leggeed Robot for Lunar Crator Exploration</h1>

@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <title>Project 1</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Include your main stylesheet -->
-    <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
         /* Custom styles specific to this project page */
         body {
             color: #000; /* Set text color to black (#000) */
@@ -40,6 +46,19 @@
     </style>
 </head>
 <body>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript to load the common header -->
+    <script>
+        $(function () {
+            // Load the common header into the specified container
+            $('#common-header-container').load('common_header.html');
+        });
+    </script>
+
+    <!-- Your page content goes here -->
+    <div id="common-header-container"></div>
     <div class="project-page">
         <img src="images/gait_phase1.png" alt="Project 1">
         <h1>Gait Phase Estimation using Deep Neural Networks</h1>
