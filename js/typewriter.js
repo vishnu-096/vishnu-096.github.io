@@ -25,5 +25,5 @@ function typeWriter(text, element, delay) {
 
 // Call the typewriter function when the page loads
 window.addEventListener('load', () => {
-    typeWriter("HTML, CSS, JavaScript, Python, Robotics", 'skillsText', 1000); // Replace with your skills
+    typeWriter("Robotics, Motion Planning, Control, Computer Vision, Reinforcement Learning, Real-Time Deployment, Embedded System ", 'skillsText', 1000); // Replace with your skills
 });

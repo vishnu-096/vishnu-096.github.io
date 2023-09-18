@@ -1,10 +1,10 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Add these links to your HTML file -->
 
     <title>Vishnu T. P.</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -22,91 +22,103 @@
     <!-- JavaScript to load the common header -->
     <script>
         $(function () {
-            // Load the common header into the specified container
             $('#common-header-container').load('common_header.html');
         });
     </script>
 
-    <!-- Your page content goes here -->
     <div id="common-header-container"></div>
+
     <section id="about" class="initial-0">
-        <div class="about-content">
-
-            <div class="about-description">
-                <div class="about-header">
-                    <div class="header">About Me</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-description">
+                        <div class="about-header">
+                            <div class="header">About Me</div>
+                        </div>
+                        <p>Vishnu is an International Graduate student at ASU majoring in Robotics And Autonomous Systems. He has a strong background in robotics and embedded systems.
+                            Vishnu has an experience of over two years at Marvell Technology where he worked on designing and developing data plane modules for switches and routers. His strong drive and interest in the field of robotics motivated him to switch from the computer networks/embedded domain to robotics.
+                            After which, he has worked on multiple research projects mainly in the field of autonomous mobile robot.</p>
+                            <p> 
+                                 He has worked with robotic manipulators, social robot and legged robots in different projects and have a great practical as well as conceptual understanding. He has filed a patent for a device that helps visually challenged people for navigation and has published papers  at multiple conferences. He enjoys taking part in Hackathons and strives to be the best in whatever he does. Any new problem or application in robotics interests him and  main area expertise in control theory, computer vision and autonomous robots.
+                            Being an avid soccer fan, he spends his spare time playing/watching soccer. He also enjoys hiking and traveling.
+                            </p>
+                    </div>
                 </div>
-
-                <p>Vishnu is an International Graduate student at ASU majoring in Robotics And Autonomous Systems. He has a strong background in robotics and embedded systems.
-                    Vishnu has an experience of over two years at Marvell Technology where he worked on designing and developing data plane modules for switches and routers. His strong drive and interest in the field of robotics motivated him to switch from the computer networks/embedded domain to robotics.
-                    After which, he has worked on multiple research projects mainly in the field of autonomous mobile robot.</p>
-                    <p> 
-                         He has worked with robotic manipulators, social robot and legged robots in different projects and have a great practical as well as conceptual understanding. He has filed a patent for a device that helps visually challenged people for navigation and has published papers  at multiple conferences. He enjoys taking part in Hackathons and strives to be the best in whatever he does. Any new problem or application in robotics interests him and  main area expertise in control theory, computer vision and autonomous robots.
-                    Being an avid soccer fan, he spends his spare time playing/watching soccer. He also enjoys hiking and traveling.
-                    </p>
-            </div>
-            <div class="about-image">
-                <img src="images/prof_pic2.jpg" alt="Your Photo" class="circular-image">
+                <div class="col-md-6">
+                    <div class="about-image">
+                        <img src="images/prof_pic2.jpg" alt="Your Photo" class="circular-image">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="skills">
-        <h2>Expertise</h2>
-        <p id="skillsText"></p>
-    </section>
-    
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project">
-                <img src="images/gait_phase1.png" alt="Project 1">
-                <div class="project-details">
-                    <h3>Gait Phase Estimation using Deep Neural Networks</h3>
-                    <p>Description of Project 1</p>
-                    <a href="project1.html">View Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/charlotte_2.jpg" alt="Project 2">
-                <div class="project-details">
-                    <h3>Six-Legged robot for Lunar Crater Exploration</h3>
-                    <p>Description of Project 2</p>
-                    <a href="project2.html">View Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/sgan_pic2.png" alt="Project 3">
-                <div class="project-details">
-                    <h3>Preemptive planning and Dynamic obstacle avoidance with SGANs and MPC</h3>
-                    <p>Key Words: Social GAN, Deep Learning, Docker, MPC, RRT*, Dynamic Obstacle Avoidance</p>
-                    <a href="project3.html">View Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/icra_1.png" alt="Project 3">
-                <div class="project-details">
-                    <h3>Robot Guide: Social Robot based Intelligent Navigation of Visually Impaired Person in Human Aware Indoor Environment</h3>
-                    <p>Key Words: Socially Compliant, Navigation, Patented Device, Computer Vision, Planning, Tracking</p>
-                    <a href="project4.html">View Details</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/MRS3.png" alt="Project 4">
-                <div class="project-details">
-                    <h3>Exploration and Mapping using a Decentralized Multi-Robot System for Search and Rescue Operations </h3>
-                    <p>Key Words: MRS, NonLinear- MPC, Artificial Potential Gradient, Mapping, Multi-Robot Communication</p>
-                    <a href="project4.html">View Details</a>
-                </div>
-            </div>
 
-            <!-- Add more project entries here -->
-        </div>    
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Expertise</h2>
+                    <p id="skillsText"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Projects</h2>
+                    <div class="project-container">
+                        <!-- Projects go here -->
+                        <div class="project">
+                            <img src="images/charlotte_2.jpg" alt="Project 2">
+                            <div class="project-details">
+                                <h3>Six-Legged robot for Lunar Crater Exploration</h3>
+                                <p>Description of Project 2</p>
+                                <a href="project2.html">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="images/sgan_pic2.png" alt="Project 3">
+                            <div class="project-details">
+                                <h3>Preemptive planning and Dynamic obstacle avoidance with SGANs and MPC</h3>
+                                <p>Key Words: Social GAN, Deep Learning, Docker, MPC, RRT*, Dynamic Obstacle Avoidance</p>
+                                <a href="project3.html">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="images/icra_1.png" alt="Project 3">
+                            <div class="project-details">
+                                <h3>Robot Guide: Social Robot based Intelligent Navigation of Visually Impaired Person in Human Aware Indoor Environment</h3>
+                                <p>Key Words: Socially Compliant, Navigation, Patented Device, Computer Vision, Planning, Tracking</p>
+                                <a href="project4.html">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="images/MRS3.png" alt="Project 4">
+                            <div class="project-details">
+                                <h3>Exploration and Mapping using a Decentralized Multi-Robot System for Search and Rescue Operations </h3>
+                                <p>Key Words: MRS, NonLinear- MPC, Artificial Potential Gradient, Mapping, Multi-Robot Communication</p>
+                                <a href="project4.html">View Details</a>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>Contact: your@email.com</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Contact: your@email.com</p>
+                </div>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>

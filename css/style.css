@@ -285,3 +285,23 @@ footer {
 .navbar-dark .navbar-toggler-icon {
     color: #fff; /* Change the color of the navbar toggler icon (hamburger menu) */
 }
+
+/* Your existing styles */
+
+/* Add new styles for responsiveness */
+@media (max-width: 768px) {
+    .about-description, .about-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-description {
+        margin-top: 20px;
+    }
+
+    .circular-image {
+        margin-left: 0;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
