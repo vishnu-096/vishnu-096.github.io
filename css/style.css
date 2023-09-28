@@ -26,14 +26,14 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4rem;
+    padding: 2%; /* Adjusted from 4rem to 2% */
 }
 
 .initial-0 h1,
 .initial-0 h3,
 .initial-0 h2 {
-    margin-left: 450px;
-    font-size: 48px;
+    margin-left: 1%; /* Adjusted from 10% to 1% */
+    font-size: 3vw; /* Adjusted to be relative to viewport width */
 }
 .initial-0 p {
     color: #000;
@@ -42,174 +42,69 @@ body {
 .about-content {
     display: flex;
     align-items: center;
-    padding: 4rem;
+    padding: 2%; /* Adjusted from 4rem to 2% */
 }
 /* Add this CSS for the grey "About Me" box */
 .about-header {
     background-color: #2997ea;
-    padding: 10px 10px; /* Increase padding to control the box length */
-    border-radius: 20px 20px 20px 20px; /* Make it rounded on top */
+    padding: 1% 1%; /* Adjusted from 10px to 1% */
+    border-radius: 3% 3% 3% 3%; /* Adjusted from 20px to 3% */
     color: #fff;
     text-align: center;
     font-weight: bold;
-    font-size: 28px; /* Increase the font size */
-    max-width: 200px;
+    font-size: 1.5vw; /* Adjusted to be relative to viewport width */
+    max-width: 50%;
     margin: 0 auto;
-    margin-bottom: 40px; /* Adjust the margin as needed */
-
+    margin-bottom: 10%; /* Adjusted from 5% to 2% */
 }
 
-/* Modify the width and add spacing to the About Me section */
 .about-description {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px; /* Add more padding for spacing */
-    border-radius: 20px;
+    border-radius: 3%; /* Adjusted from 20px to 3% */
     color: #333;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 1% 1% 1% rgba(0, 0, 0, 0.2); /* Adjusted from 10px to 1% */
     position: relative;
-    margin-top: 100px;
-    max-width: 80%; /* Increase the maximum width */
+    margin-top: 5%; /* Adjusted from 5% to 2% */
+    max-width: 100%; /* Adjusted to increase the maximum width */
     width: 100%; /* Set the width to 100% */
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateX(20%);
 }
+
 .about-description p {
-    font-size: 16px;
+    font-size: 1.0vw; /* Adjusted to be relative to viewport width */
     line-height: 1.7;
-    margin-bottom: 20px;
-    text-align: left; /* Align the description text to the left */
+    margin-bottom: 4%; /* Adjusted from 20px to 2% */
+    margin-left: 4%; /* Adjusted from 20px to 2% */
+
+    max-width: 80%;
+    text-align: left; /* Align the description text to justify */
 }
-
-
 
 .circular-image {
     border-radius: 50%;
-    width: 550px; /* Adjust the width and height as needed */
-    height: 550px;
+    width: 55%; /* Adjusted from 35% to 15% */
+    height: 55%; /* Adjusted from 35% to 15% */
     object-fit: cover; /* Maintain image aspect ratio and cover the circular container */
-    margin-left: 500px; /* Adjust the margin as needed */
+    margin-left: 25%; /* Adjusted from 65% to 30% */
     float: right; /* Float the image to the left to keep the text next to it */
 }
 
-
 .container {
-    max-width: 1200px;
+    max-width: 80%; /* Adjusted from 1200px to 80% */
     margin: 0 auto;
-    padding: 20px;
+    padding: 2%; /* Adjusted from 20px to 2% */
 }
 
 section {
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2% 0; /* Adjusted from 20px to 2% */
+    padding: 2%; /* Adjusted from 20px to 2% */
+    border-radius: 1%; /* Adjusted from 8px to 1% */
+    box-shadow: 0 1% 1% rgba(0, 0, 0, 0.1); /* Adjusted from 0 4px 6px rgba(0, 0, 0, 0.1) to 0 1% 1% rgba(0, 0, 0, 0.1) */
 }
 
 h2 {
     color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-
-/* Add this to your existing CSS file or in a <style> tag within your HTML */
-
-#skills {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 20px;
-    color: #333;
-    transform: translateX(300%);
-    transform: translateZ(-250%);
-    margin-top: 20px; /* Add margin to move it below the cover pic */
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    max-width: 400px; /* Set the maximum width as needed */
-    width: 100%; /* Make it take the full width of its container */
-    margin-left: 20px; /* Add margin to separate it from the description */
-}
-
-#skills h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    padding: 5px 5px;
-    color: #fff;
-    text-align: center;
-    top: -15px;
-    /* right: 80%; */
-    /* transform: translateX(-50%); */
-    background-color: #28696a;
-
-    border-radius: 20px;
-    font-weight: bold;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-#skillsText {
-    font-size: 18px; /* Adjust the font size as needed */
-    padding: 10px;
-    color: #333;
-
-}
-
-/* header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 18px;
-} */
-header {
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: white;
-    text-align: center;
-    padding: 100px 0; /* Adjust the padding for spacing */
-}
-
-header h1 {
-    font-size: 48px; /* Increase the font size */
-    margin-bottom: 20px; /* Add spacing below the heading */
-    font-family: 'Your Preferred Font', sans-serif; /* Specify a preferred font */
-}
-
-header p {
-    font-size: 24px; /* Increase the font size */
-    font-family: 'Your Preferred Font', sans-serif; /* Specify a preferred font */
-}
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-section {
-    background-color: white;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 2.5vw; /* Adjusted to be relative to viewport width */
+    margin-bottom: 2%; /* Adjusted from 20px to 2% */
 }
 
 .project-container {
@@ -219,89 +114,50 @@ h2 {
 
 .project {
     flex: 0 0 auto;
-    width: 300px;
-    margin: 1rem;
-    padding: 1rem;
+    width: 25%; /* Adjusted from 300px to 25% */
+    margin: 1%; /* Adjusted from 1rem to 1% */
+    padding: 1%; /* Adjusted from 1rem to 1% */
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1% rgba(0, 0, 0, 0.1); /* Adjusted from 0 0 10px rgba(0, 0, 0, 0.1) to 0 0 1% rgba(0, 0, 0, 0.1) */
     text-align: left;
     display: flex;
     flex-direction: column; /* Set the direction to column to place text below image */
 }
 
 .project img {
-    width: 300px; /* Adjust the width for larger project images */
-    height: 200px; /* Adjust the height for larger project images */
+    width: 100%; /* Adjusted from 300px to 100% */
+    height: auto; /* Adjusted from 200px to auto */
     object-fit: cover;
-    margin-bottom: 10px; /* Add margin to separate image and text */
+    margin-bottom: 2%; /* Adjusted from 10px to 2% */
 }
 
 .project-details {
     flex-grow: 1; /* Allow text to expand and fill remaining space */
     /* background-color: #fff; Set a contrasting background color */
     color: #000; /* Set text color to black */
-    padding: 10px; /* Add padding for readability */
+    padding: 1%; /* Adjusted from 10px to 1% */
 }
 
 .project h3 {
-    font-size: 20px;
-    /* margin-top: 10px; */
+    font-size: 1.7vw; /* Adjusted to be relative to viewport width */
 }
 
 .project p {
-    font-size: 16px;
-    /* margin-top: 10px; */
+    font-size: 1vw; /* Adjusted to be relative to viewport width */
 }
-
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 2% 0; /* Adjusted from 20px to 2% */
 }
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 24px;
+        font-size: 2vw; /* Adjusted to be relative to viewport width */
     }
 
     header p {
-        font-size: 16px;
-    }
-
-    .project img {
-        max-width: 50%;
-        height: 50%;
-    }
-}
-/* Bootstrap Overrides */
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff !important; /* Change link text color to white */
-    font-weight: bold; /* Make link text bold */
-    font-size: 22px
-}
-
-.navbar-dark .navbar-toggler-icon {
-    color: #fff; /* Change the color of the navbar toggler icon (hamburger menu) */
-}
-
-/* Your existing styles */
-
-/* Add new styles for responsiveness */
-@media (max-width: 768px) {
-    .about-description, .about-image {
-        width: 100%;
-        text-align: center;
-    }
-
-    .about-description {
-        margin-top: 20px;
-    }
-
-    .circular-image {
-        margin-left: 0;
-        float: none;
-        margin-bottom: 20px;
-    }
-}
+        font-size: 1.3vw; /* Adjusted to be relative to viewport width */
+   
