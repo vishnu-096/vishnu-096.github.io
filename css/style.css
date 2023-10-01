@@ -179,14 +179,14 @@ footer {
 }
 
 #skills h2 {
-    font-size: 2rem; /* Adjusted from 2.2vw to 2rem */
-    margin-bottom: 20px; /* Adjusted from 2% to 20px */
+    font-size: 1.7vw; /* Adjusted from 2.2vw to 2rem */
+    margin-bottom: 2%; /* Adjusted from 2% to 20px */
     color: #000;
 }
 
 #skillsText {
-    font-size: 1rem; /* Adjusted from 1.1vw to 1rem */
-    margin-bottom: 20px; /* Adjusted from 2% to 20px */
+    font-size: 1vw; /* Adjusted from 1.1vw to 1rem */
+    margin-bottom: 2%; /* Adjusted from 2% to 20px */
 }
 
 /* Increase text size and change color of nav bar menu options */
@@ -241,8 +241,8 @@ footer {
 }
 
 #contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.8vw;
+    margin-bottom: 2%;
     color: #000;
 }
 
@@ -257,7 +257,7 @@ footer {
 }
 
 .contact-item i {
-    margin-right: 10px;
+    margin-right: 1%;
 }
 
 .contact-item a {
@@ -270,7 +270,7 @@ footer {
 }
 
 .contact-item span {
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
 /* Change color of nav bar menu options on hover */
