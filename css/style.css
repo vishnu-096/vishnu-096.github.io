@@ -1,4 +1,17 @@
 /* Reset some default styles */
+
+header h1 {
+    font-size: 3rem; /* Adjusted font size */
+    margin-bottom: 10px; /* Adjusted margin */
+    color: #decccc; /* Font color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle text shadow */
+}
+
+header p {
+    font-size: 1.5rem; /* Adjusted font size */
+    color: #c5f1f5; /* Font color */
+}
+
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -47,10 +60,11 @@ body {
 /* Add this CSS for the grey "About Me" box */
 .about-header {
     background-color: #2997ea;
-    padding: 1% 1%; /* Adjusted from 10px to 1% */
-    border-radius: 3% 3% 3% 3%; /* Adjusted from 20px to 3% */
+    /* padding: 1% 1%;  */
+    border-radius: 2%; /* Adjusted from 20px to 3% */
     color: #fff;
     text-align: center;
+
     font-weight: bold;
     font-size: 1.5vw; /* Adjusted to be relative to viewport width */
     max-width: 50%;
@@ -60,7 +74,7 @@ body {
 
 .about-description {
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 3%; /* Adjusted from 20px to 3% */
+    border-radius: 5%; /* Adjusted from 20px to 3% */
     color: #333;
     box-shadow: 1% 1% 1% rgba(0, 0, 0, 0.2); /* Adjusted from 10px to 1% */
     position: relative;
@@ -152,7 +166,117 @@ footer {
     text-align: center;
     padding: 2% 0; /* Adjusted from 20px to 2% */
 }
+#skills {
+    background-color: #fff;
+    border-radius: 6%; /* Adjusted from 3% to 10px */
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2%; /* Adjusted from 2% to 20px */
+    margin-top: 2%; /* Adjusted from 5% to 2% */
+    max-width: 30%;
+    margin-left: 13%;
+    margin-right: auto;
+}
 
+#skills h2 {
+    font-size: 2rem; /* Adjusted from 2.2vw to 2rem */
+    margin-bottom: 20px; /* Adjusted from 2% to 20px */
+    color: #000;
+}
+
+#skillsText {
+    font-size: 1rem; /* Adjusted from 1.1vw to 1rem */
+    margin-bottom: 20px; /* Adjusted from 2% to 20px */
+}
+
+/* Increase text size and change color of nav bar menu options */
+.navbar-nav .nav-link {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: #fff; /* Change the text color */
+}
+/* Add this CSS for the resume section */
+#resume {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3%; /* Adjust the border radius as a percentage */
+    color: #333;
+    box-shadow: 0 0 1%; /* Adjust the box shadow as a percentage */
+    padding: 2%; /* Adjust the padding as a percentage */
+    margin-top: 2%; /* Adjust the margin as a percentage */
+    max-width: 40%; /* Adjust the maximum width as a percentage */
+    margin-left: 13%; /* Adjust the left margin as a percentage */
+    margin-right: auto;
+}
+
+#resume h2 {
+    font-size: 2.2vw; /* Adjusted to be relative to viewport width */
+    margin-bottom: 2%; /* Adjusted from 20px to a percentage */
+    color: #000;
+}
+
+.resume-link {
+    font-size: 1vw; /* Adjusted to be relative to viewport width */
+    color: #3498db; /* Change the color to your preference */
+    text-decoration: none;
+}
+
+.resume-link i {
+    margin-right: 2%; /* Adjusted from 10px to a percentage */
+}
+
+.resume-link:hover {
+    color: #2980b9; /* Change the hover color to your preference */
+}
+
+/* Add this CSS for contact section */
+#contact {
+    background-color: #fff;
+    border-radius: 10%;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2%; /* Adjusted from 20px to 2% */
+    margin-top: 2%; /* Adjusted from 5% to 2% */
+    max-width: 40%;
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+.contact-item a {
+    color: #2997ea;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #1e6bb8;
+}
+
+.contact-item span {
+    font-size: 1rem;
+}
+
+/* Change color of nav bar menu options on hover */
+.navbar-nav .nav-link:hover {
+    color: #f0ad4e; /* Change the text color on hover */
+}
 @media (max-width: 768px) {
     header h1 {
         font-size: 2vw; /* Adjusted to be relative to viewport width */
@@ -161,3 +285,4 @@ footer {
     header p {
         font-size: 1.3vw; /* Adjusted to be relative to viewport width */
    
+    }
