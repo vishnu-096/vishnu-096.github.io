@@ -1,14 +1,14 @@
 /* Reset some default styles */
 
 header h1 {
-    font-size: 3rem; /* Adjusted font size */
+    font-size: 2.5vw; /* Adjusted font size */
     margin-bottom: 10px; /* Adjusted margin */
     color: #decccc; /* Font color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle text shadow */
 }
 
 header p {
-    font-size: 1.5rem; /* Adjusted font size */
+    font-size: 2.1vw; /* Adjusted font size */
     color: #c5f1f5; /* Font color */
 }
 
@@ -279,10 +279,10 @@ footer {
 }
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2vw; /* Adjusted to be relative to viewport width */
+        font-size: 1.7vw; /* Adjusted to be relative to viewport width */
     }
 
     header p {
-        font-size: 1.3vw; /* Adjusted to be relative to viewport width */
+        font-size: 1vw; /* Adjusted to be relative to viewport width */
    
     }
